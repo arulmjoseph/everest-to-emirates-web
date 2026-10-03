@@ -14,7 +14,33 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      event_inquiries: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          name: string
+          participate: boolean
+          sponsor: boolean
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          name: string
+          participate: boolean
+          sponsor: boolean
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          name?: string
+          participate?: boolean
+          sponsor?: boolean
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
