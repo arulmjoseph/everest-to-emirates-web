@@ -382,7 +382,7 @@ body { font-family:'DM Sans',Arial,sans-serif; background:var(--background); col
 .header-actions button:first-child { background:color-mix(in oklab,var(--background) 72%,transparent); color:var(--foreground); border-color:var(--foreground); }
 .header-actions button:last-child { background:var(--foreground); color:var(--background); }
 .desktop-nav a:hover { color:var(--gold); }
-.hero { height:min(950px,100svh); min-height:700px; text-align:center; background:var(--background); }
+.hero { height:min(950px,90svh); min-height:700px; text-align:center; color:var(--foreground); background:var(--background); }
 .hero-image { object-position:center 58%; filter:saturate(1.7) hue-rotate(23deg) contrast(1.12); }
 .hero-shade { background:linear-gradient(180deg, color-mix(in oklab,var(--background) 36%,transparent) 0%, color-mix(in oklab,var(--accent) 35%,transparent) 32%,color-mix(in oklab,var(--accent) 24%,transparent) 65%,var(--background) 100%),linear-gradient(90deg,color-mix(in oklab,var(--secondary) 65%,transparent),color-mix(in oklab,var(--gold) 25%,transparent) 55%,color-mix(in oklab,var(--secondary) 45%,transparent)); }
 .hero-content { padding-top:clamp(155px,19vh,225px); display:flex; align-items:center; flex-direction:column; }
@@ -455,7 +455,7 @@ body { font-family:'DM Sans',Arial,sans-serif; background:var(--background); col
   .header-inner { height:78px; padding-inline:22px; }
   .mobile-menu-button { color:var(--foreground); background:color-mix(in oklab,var(--background) 70%,transparent); }
   .mobile-nav { top:78px; background:var(--card); border:1px solid var(--border); }
-  .hero { height:780px; min-height:0; }
+.hero { height:min(780px,90svh); min-height:0; }
   .hero-content { padding-top:175px; }
   .hero h1 { font-size:clamp(66px,11vw,110px); }
   .hero-topline { font-size:16px; }
@@ -468,7 +468,7 @@ body { font-family:'DM Sans',Arial,sans-serif; background:var(--background); col
   .brand-copy strong { font-size:16px; }
   .brand-copy small { font-size:8px; }
   .mobile-nav { top:70px; }
-  .hero { height:min(790px,100svh); min-height:680px; }
+  .hero { height:min(790px,90svh); min-height:620px; }
   .hero-image { object-position:48% center; }
   .hero-shade { background:linear-gradient(180deg,color-mix(in oklab,var(--secondary) 73%,transparent) 0%,color-mix(in oklab,var(--accent) 40%,transparent) 50%,var(--background) 100%); }
   .hero-content { padding-top:166px; }
