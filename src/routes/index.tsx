@@ -67,7 +67,6 @@ function Home() {
   const [website, setWebsite] = useState('')
   const [error, setError] = useState('')
   const [sending, setSending] = useState(false)
-  const [backdrop, setBackdrop] = useState<'image'|'video'>('image')
   function goToForm(kind: 'participate' | 'sponsor') {
     if (kind === 'participate') setParticipate(true)
     else setSponsor(true)
@@ -104,7 +103,6 @@ function Home() {
     <main>
       <section className="hero" aria-labelledby="hero-title">
         <img className="hero-image" src={hero} alt="Himalayan mountains and Nepalese temples meeting the Dubai skyline at sunset" width={1920} height={1152} />
-        {backdrop === 'video' && <div className="hero-video-note">Event film coming soon</div>}
         <div className="hero-shade" />
         <div className="hero-content content-width"><div className="hero-topline"><span className="hero-rule" /> A NEPAL × UAE CULTURAL CELEBRATION</div>
           <p className="hero-pretitle">A journey from the Himalayas to the horizons of opportunity</p>
@@ -112,7 +110,7 @@ function Home() {
           <p className="hero-tagline">Culture <i /> Connection <i /> Collaboration</p>
           <div className="hero-actions"><Button onClick={() => goToForm('participate')}>Be part of the journey <ArrowUpRight /></Button><Button variant="outline" className="hero-outline" onClick={() => goToForm('sponsor')}>Become a sponsor <ArrowRight /></Button></div>
         </div>
-        <div className="hero-bottom content-width"><a href="#about" aria-label="Scroll to about"><ArrowDown size={18} /> SCROLL TO EXPLORE</a><div className="backdrop-switch" aria-label="Backdrop mode"><Button variant="ghost" className={backdrop === 'image' ? 'active' : ''} onClick={() => setBackdrop('image')}>IMAGE</Button><Button variant="ghost" className={backdrop === 'video' ? 'active' : ''} onClick={() => setBackdrop('video')}>VIDEO</Button></div><span>NEPAL UTSAV / UAE</span></div>
+        <div className="hero-bottom content-width"><a href="#about" aria-label="Scroll to about"><ArrowDown size={18} /> SCROLL TO EXPLORE</a><span>NEPAL UTSAV / UAE</span></div>
       </section>
 
       <section id="about" className="about-section section-pad"><div className="content-width about-grid"><div className="about-images"><img src={dance} alt="Traditional Nepalese cultural dancers" loading="lazy" width={1104} height={1312}/><div className="about-image-badge"><span>नेपाल</span><small>A CULTURE THAT CONNECTS</small></div></div><div className="about-copy"><SectionIntro number="01" label="OUR STORY" title="Two places. One shared journey."><strong>Everest to Emirates</strong> is a celebration of Nepal’s heritage, culture and community in the UAE — a meeting place for the people, stories and ideas that connect us.</SectionIntro><p>From the spirit of the Himalayas to the energy of the Emirates, Nepal Utsav creates a space to experience traditions, discover new possibilities and build relationships that last beyond a single evening.</p><a className="text-link" href="#objectives">Explore our purpose <ArrowUpRight size={17}/></a></div></div></section>
