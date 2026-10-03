@@ -104,9 +104,9 @@ function Home() {
       <section className="hero" aria-labelledby="hero-title">
         <img className="hero-image" src={hero} alt="Himalayan mountains and Nepalese temples meeting the Dubai skyline at sunset" width={1920} height={1152} />
         <div className="hero-shade" />
-        <div className="hero-content content-width"><div className="hero-topline"><span className="hero-rule" /> A NEPAL × UAE CULTURAL CELEBRATION</div>
-          <p className="hero-pretitle">A journey from the Himalayas to the horizons of opportunity</p>
+        <div className="hero-content content-width"><div className="hero-topline"><span>NEPAL UTSAV</span><span>NEPAL × UAE</span></div>
           <h1 id="hero-title" className="font-display">Everest <span>to</span><br />Emirates</h1>
+          <p className="hero-pretitle">A journey from the Himalayas to the horizons of opportunity</p>
           <p className="hero-tagline">Culture <i /> Connection <i /> Collaboration</p>
           <div className="hero-actions"><Button onClick={() => goToForm('participate')}>Be part of the journey <ArrowUpRight /></Button><Button variant="outline" className="hero-outline" onClick={() => goToForm('sponsor')}>Become a sponsor <ArrowRight /></Button></div>
         </div>
