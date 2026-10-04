@@ -110,7 +110,7 @@ function Home() {
       <div className="header-inner">
         <Brand />
         <nav className="desktop-nav" aria-label="Main navigation">{nav.map(([label,id]) => <a key={id} href={`#${id}`}>{label}</a>)}</nav>
-        <div className="header-actions"><Button variant="outline" className="header-sponsor" onClick={() => goToForm('sponsor')}>Become a sponsor</Button><Button onClick={() => goToForm('participate')}>Participate <ArrowUpRight /></Button></div>
+        <div className="header-actions"><Button variant="outline" className="header-secondary-cta" onClick={() => goToForm('sponsor')}>Become a sponsor</Button><Button onClick={() => goToForm('participate')}>Participate <ArrowUpRight /></Button></div>
         <Button variant="ghost" size="icon" className="mobile-menu-button" aria-label={menuOpen ? 'Close menu' : 'Open menu'} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</Button>
       </div>
       {menuOpen && <nav className="mobile-nav" aria-label="Mobile navigation">{nav.map(([label,id]) => <a href={`#${id}`} onClick={() => setMenuOpen(false)} key={id}>{label}<ChevronRight size={16}/></a>)}<Button onClick={() => goToForm('participate')}>Participate</Button><Button variant="outline" onClick={() => goToForm('sponsor')}>Become a sponsor</Button></nav>}
