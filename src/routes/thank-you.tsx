@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { ArrowLeft, Check } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import logo from '@/assets/f27e6341-6a40-4b4b-beff-539c4d6e9e3e.jpg.asset.json'
+import logoImg from '@/assets/logo.png'
 
 export const Route = createFileRoute('/thank-you')({
   head: () => ({ meta: [
@@ -17,7 +17,7 @@ export const Route = createFileRoute('/thank-you')({
 
 function ThankYou() {
   return <main className="min-h-screen bg-background text-foreground flex flex-col">
-    <header className="mx-auto w-full max-w-7xl px-6 py-6"><Link to="/"><img src={logo.url} alt="Everest to Emirates" className="h-16 w-auto object-contain" /></Link></header>
+    <header className="mx-auto w-full max-w-7xl px-6 py-6"><Link to="/"><img src={logoImg} alt="Everest to Emirates" className="h-16 w-auto object-contain" /></Link></header>
     <section className="flex flex-1 flex-col items-center justify-center px-6 pb-24 text-center">
       <span className="mb-8 grid size-16 place-items-center rounded-full bg-accent text-primary"><Check size={28} /></span>
       <p className="eyebrow">EVEREST TO EMIRATES</p>
