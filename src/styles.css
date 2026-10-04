@@ -360,7 +360,8 @@ h1, h2, h3, h4, h5, h6, .font-display, button, label, span, p, a, div {
 .header-actions button:first-child { background:transparent; color:#070B12; border-color:#070B12; font-weight:400 !important; }
 .header-actions button:last-child { background:#070B12; color:#FFFFFF; border-color:#070B12; font-weight:400 !important; }
 .desktop-nav a:hover { color: #C88B32 !important; }
-.hero { height:100svh; min-height:700px; padding:0 0 40px; box-sizing:border-box; justify-content:flex-end; text-align:center; color:var(--foreground); background:var(--background); }
+.hero { height:100svh; min-height:700px; padding:0 0 40px; box-sizing:border-box; overflow:hidden; justify-content:flex-end; text-align:center; color:var(--foreground); background:var(--background); }
+.hero > .hero-image { inset:0 !important; transform:none !important; }
 .hero-image { object-position:center 58%; filter:none; }
 .hero-shade { inset:0; bottom:0; height:100%; z-index:1; pointer-events:none; background:linear-gradient(180deg, rgba(7,11,18,0.12) 0%, rgba(7,11,18,0.32) 55%, rgba(7,11,18,0.9) 100%); }
 .hero-content { margin-bottom:0; padding-top:0; display:flex; align-items:center; flex-direction:column; }
